@@ -30,6 +30,8 @@ spec:
       containers:
       - name: server
         image: adservice
+        securityContext:
+          runAsRoot: true
         ports:
         - containerPort: 9555
         env:

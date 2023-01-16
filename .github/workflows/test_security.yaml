@@ -14,7 +14,6 @@ jobs:
       with:
         files: ${{ steps.changed-files.outputs.all_changed_files }}
         fixFiles: true
-        # now for real
         format: "sarif,json"
     - uses: peter-evans/create-pull-request@v4
       with:
