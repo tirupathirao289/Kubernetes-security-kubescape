@@ -30,6 +30,7 @@ spec:
       containers:
       - name: server
         image: adservice
+        # Here should be changed
         securityContext:
           runAsRoot: true
         ports:
