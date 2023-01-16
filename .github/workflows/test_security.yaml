@@ -23,8 +23,12 @@ jobs:
         commit-message: Add Security
         title: "chore: fix K8s misconfigurations"
         body: |
-          Kubescape added some straightforward fixes to enhance security of this change.
-          You may still need to add some fixes manually that are not conclusive.
+          # What this PR changes
+
+          https://github.com/kubescape/kubescape has found misconfigurations in
+          the targeted branch. This PR fixes the misconfigurations that have
+          automatic fixes available. You may still need to fix
+          misconfigurations that do not have automatic fixes.
         base: ${{ github.head_ref }}
         branch: kubescape-auto-fix-${{ github.head_ref || github.ref_name }}
         delete-branch: true
