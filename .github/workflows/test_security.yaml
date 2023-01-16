@@ -20,8 +20,8 @@ jobs:
       with:
         add-paths: |
           *.yaml
-        commit-message: Add Security
-        title: "chore: fix K8s misconfigurations"
+        commit-message: "chore: fix K8s misconfigurations"
+        title: "[Kubescape] chore: fix K8s misconfigurations"
         body: |
           # What this PR changes
 
