@@ -19,7 +19,7 @@ jobs:
     - uses: peter-evans/create-pull-request@v4
       with:
         add-paths: |
-          *.yaml
+          *.{yml,yaml}
         commit-message: "chore: fix K8s misconfigurations"
         title: "[Kubescape] chore: fix K8s misconfigurations"
         body: |
