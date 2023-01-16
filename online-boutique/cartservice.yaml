@@ -24,7 +24,7 @@ spec:
     metadata:
       labels:
         app: cartservice
-    # Something something 3
+    # Something something 4
     spec:
       serviceAccountName: default
       terminationGracePeriodSeconds: 5

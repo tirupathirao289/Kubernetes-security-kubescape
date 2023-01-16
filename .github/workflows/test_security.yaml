@@ -20,7 +20,6 @@ jobs:
       with:
         add-paths: |
           *.yaml
-          *.yml
         commit-message: "chore: fix K8s misconfigurations"
         title: "[Kubescape] chore: fix K8s misconfigurations"
         body: |
