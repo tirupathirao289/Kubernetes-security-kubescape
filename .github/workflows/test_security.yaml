@@ -25,7 +25,7 @@ jobs:
         body: |
           # What this PR changes
 
-          https://github.com/kubescape/kubescape has found misconfigurations in the targeted branch. This PR fixes the misconfigurations that have automatic fixes available.
+          [Kubescape](https://github.com/kubescape/kubescape) has found misconfigurations in the targeted branch. This PR fixes the misconfigurations that have automatic fixes available.
 
           You may still need to fix misconfigurations that do not have automatic fixes.
         base: ${{ github.head_ref }}
