@@ -15,6 +15,7 @@ jobs:
         files: ${{ steps.changed-files.outputs.all_changed_files }}
         fixFiles: true
         format: "sarif,json"
+        severityThreshold: "critical"
     - uses: peter-evans/create-pull-request@v4
       with:
         add-paths: |
