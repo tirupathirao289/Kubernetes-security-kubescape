@@ -13,9 +13,8 @@ jobs:
     - uses: vladklokun/github-action@feat-support-autofixing
       with:
         files: ${{ steps.changed-files.outputs.all_changed_files }}
-        fixFiles: true
-        format: "sarif,json"
-        severityThreshold: "critical"
+        fixFiles: "true"
+        format: "sarif"
     - uses: peter-evans/create-pull-request@v4
       with:
         add-paths: |
