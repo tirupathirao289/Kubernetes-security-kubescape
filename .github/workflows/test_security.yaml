@@ -10,10 +10,10 @@ jobs:
     - name: Get changed files
       id: changed-files
       uses: tj-actions/changed-files@v14.6
-    - uses: vladklokun/github-action@feat-support-autofixing
+    - uses: kubescape/github-action@feat-support-autofixing
       with:
         files: ${{ steps.changed-files.outputs.all_changed_files }}
-        fixFiles: "true"
+        fixFiles: true
         format: "sarif"
     - uses: peter-evans/create-pull-request@v4
       with:
