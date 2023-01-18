@@ -10,7 +10,7 @@ jobs:
     - name: Get changed files
       id: changed-files
       uses: tj-actions/changed-files@v14.6
-    - uses: kubescape/github-action@feat-support-autofixing
+    - uses: kubescape/github-action@main
       with:
         files: ${{ steps.changed-files.outputs.all_changed_files }}
         fixFiles: true
