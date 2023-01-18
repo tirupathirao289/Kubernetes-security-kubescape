@@ -17,3 +17,14 @@ spec:
     image: nginx
     securityContext:
       runAsRoot: true
+      capabilities:
+        drop:
+          - NET_RAW
+      seccompProfile:
+        type: RuntimeDefault
+      allowPrivilegeEscalation: false
+      runAsNonRoot: true
+      readOnlyRootFilesystem: true
+  securityContext:
+    runAsNonRoot: true
+    allowPrivilegeEscalation: false

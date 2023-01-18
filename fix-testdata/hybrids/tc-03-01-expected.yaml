@@ -17,5 +17,16 @@ spec:
     # These are the first containers comments
     - name: nginx_container
       image: nginx
+      securityContext:
+        allowPrivilegeEscalation: false
+        runAsNonRoot: true
+        readOnlyRootFilesystem: true
+        capabilities:
+          drop:
+            - NET_RAW
+        seccompProfile:
+          type: RuntimeDefault
   securityContext:
     runAsRoot: false
+    runAsNonRoot: true
+    allowPrivilegeEscalation: false
