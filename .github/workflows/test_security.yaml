@@ -22,7 +22,7 @@ jobs:
         commit-message: "chore: fix K8s misconfigurations"
         title: "[Kubescape] chore: fix K8s misconfigurations"
         body: |
-          # What this PR changes
+          # What this PR changes 
 
           [Kubescape](https://github.com/kubescape/kubescape) has found misconfigurations in the targeted branch. This PR fixes the misconfigurations that have automatic fixes available.
 
