@@ -1,4 +1,4 @@
-# Helm chart - DEPRECATED
+# Helm chart - DEPRECATED 
 
 [helm chart repo](https://github.com/armosec/armo-helm)
 
