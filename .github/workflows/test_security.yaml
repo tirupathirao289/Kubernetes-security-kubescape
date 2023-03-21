@@ -14,4 +14,4 @@ jobs:
       with:
         files: ${{ steps.changed-files.outputs.all_changed_files }}
         fixFiles: true
-        format: "sarif"
+        format: "rakhi"
